@@ -1,0 +1,14 @@
+
+title: "nullptr SECURITY"
+description: >
+  nullptr security is an organization specializing in bespoke
+  cybersecurity tools, techniques, and consulting. 
+baseurl: ""
+# url: "https://nullptrsec.io"
+url: "http://localhost:4001"
+email: "contact@nullptrsec.io"
+permalink: "/posts/:title"
+theme: minima
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
