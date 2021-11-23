@@ -28,7 +28,7 @@
 	font-family: 'Menlo Regular';
 }
 .company-name.header {
-    font-size: 70px;
+    /* font-size: 70px; */
 }
 .company-name.nullptr {
 	color: #ec1b23; 
