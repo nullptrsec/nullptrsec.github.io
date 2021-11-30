@@ -4,15 +4,9 @@
     font-weight: normal;
     src: local('Menlo Regular'), url('/assets/fonts/Menlo-Regular.woff') format('woff');
 }
-.w-75 {
-    width: 75%;
-}
 .company.bg {
     background-color: #01012a;
     color: #bbb;
-}
-.mt-25 {
-    margin-top: 15rem!important;
 }
 .btn-contact {
     /* font-size: 20px !important; */
@@ -20,15 +14,15 @@
     background-color: #ec1b23 !important;
     border-color: #ec1b23 !important;
 }
+h2 {
+    color: #fff;
+}
 .company.description {
     font-size: 16px;
 }
 .company-name {
 	display: inline-block;
 	font-family: 'Menlo Regular';
-}
-.company-name.header {
-    /* font-size: 70px; */
 }
 .company-name.nullptr {
 	color: #ec1b23; 
