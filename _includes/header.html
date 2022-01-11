@@ -1,15 +1,19 @@
 <header class="masthead mb-auto">
     <div class="inner">
-        <img width="50px" src="{{ site.url }}/assets/images/icon-transparent.png" />
+        <a href="/"><img width="50px" src="{{ site.url }}/assets/images/icon-transparent.png" /></a>
         <nav class="nav nav-masthead justify-content-center">
             <a id="home-header" class="nav-link" href="/">Home</a>
             <a id="careers-header" class="nav-link" href="/careers">Careers</a>
+            <!-- <a id="blog-header" class="nav-link" href="/blog">Blog</a> -->
         </nav>
     </div>
 </header>
 <script>
-    if (/careers(?:.html)?$/.test(window.location.pathname))
-        document.getElementById('careers-header').classList.add("active");
-    else if (/index(?:.html)?$/.test(window.location.pathname) || /^\/$/.test(window.location.pathname))
+    if (/index(?:.html)?$/.test(window.location.pathname) || /^\/$/.test(window.location.pathname))
         document.getElementById('home-header').classList.add("active");
+    else if (/careers(?:.html)?$/.test(window.location.pathname))
+        document.getElementById('careers-header').classList.add("active");
+    else if (/blog(?:.html)?$/.test(window.location.pathname) || /\/posts\//.test(window.location.pathname))
+        document.getElementById('blog-header').classList.add("active");
+
 </script>

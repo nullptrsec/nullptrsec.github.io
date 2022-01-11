@@ -8,14 +8,20 @@
         <meta name="author" content="NULLPTR SECURITY LLC">
 		<link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/assets/images/favicon.ico"/>
         <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-        <title>nullptr security</title>
+        <title>nullptr security{% if page.title %}- {{ page.title }}{% endif %}</title>
         <link rel="canonical" href="{{ site.url }}">
         <!-- !META -->
+        <!-- OPENGRAPH -->
+        <meta property="og:title" content="nullptr security{% if page.title %}- {{ page.title }}{% endif %}" />
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+        <meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.url }}/assets/images/icon-transparent.png"{% endif %}" />        
+        <!-- !OPENGRAPH -->
         <!-- CSS -->
         <link rel="stylesheet" href="{{ site.url }}/assets/css/cover.css" />
         <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
         <!-- !CSS -->
     </head>
     <body class="company bg">
@@ -33,6 +39,8 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             <script src="https://kit.fontawesome.com/c14b9eea53.js" crossorigin="anonymous"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+            <script>hljs.highlightAll();</script>
             <!-- !JS -->
             {% include analytics.html %}
         </div>

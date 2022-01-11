@@ -1,0 +1,20 @@
+---
+layout: default
+permalink: "/blog.html"
+title: Blog
+---
+<main role="main" class="pt-5 inner cover">
+    <h2><span class="company-name header nullptr">nullptr</span>&nbsp;<span class="company-name header security">security</span> Blog</h2>
+    <div class="pt-5 list-group">
+        {% for post in site.posts %}
+        <a href="{{ post.url }}" class="mb-2 list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{ post.title }}</h5>
+            <small>{{ post.date | date: "%b %d, %Y" }}</small>
+          </div>
+          <p class="mb-1">{{ post.content | strip_html | truncatewords: 50 }}</p>
+          <small class="text-muted">{{ post.author }}</small>
+        </a>
+        {% endfor %}
+    </div>
+</main>
