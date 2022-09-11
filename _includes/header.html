@@ -4,7 +4,7 @@
         <nav class="nav nav-masthead justify-content-center">
             <a id="home-header" class="nav-link" href="/">Home</a>
             <a id="careers-header" class="nav-link" href="/careers">Careers</a>
-            <!-- <a id="blog-header" class="nav-link" href="/blog">Blog</a> -->
+            <a id="blog-header" class="nav-link" href="https://blog.nullptrsec.io">Blog</a>
         </nav>
     </div>
 </header>
@@ -13,7 +13,4 @@
         document.getElementById('home-header').classList.add("active");
     else if (/careers(?:.html)?$/.test(window.location.pathname))
         document.getElementById('careers-header').classList.add("active");
-    else if (/blog(?:.html)?$/.test(window.location.pathname) || /\/posts\//.test(window.location.pathname))
-        document.getElementById('blog-header').classList.add("active");
-
 </script>
