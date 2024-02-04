@@ -8,19 +8,18 @@ title: Careers
     <p class="text-white company description">nullptr security was founded by hackers, for hackers. We're a small team of experienced engineers who value an inclusive, positive work environment where we can achieve mission success. Our team members are offered a competitive compensation package, which includes: </p>
     <ul class="text-white">
         <li>10% 401(k) contribution. You don't have to contribute anything to take full advantage!</li>
-        <li>100% paid Medical, Dental, Vision, Life insurance</li>
-        <li>Annual stipend for Short Term and Long Term Disability Insurance</li>
-        <li>$5k/year for training and professional development</li>
+        <li>100% paid Medical, Dental, Vision, Life Insurance, Short and Long Term Disability Insurance</li>
+        <li>$5k/year for training and professional development, where applicable</li>
         <li>One day off every year for Civic Engagement</li>
         <li>IRAD development opportunities with additional compensation</li>
         <li>Paid parental leave, increasing with tenure</li>
         <li>Flexible PTO structure based on total compensation package</li>
-        <li>Technology stipend so you hack on the hardware you're comfortable with</li>
+        <li>Technology stipend so you get to hack on the hardware you're comfortable with</li>
         <li>Access to a pool of leave specifically designed for covered, unpreventable events, i.e. COVID-19 or site closures</li>
         <li>Internal and external referral bonuses</li>
     </ul>    
     <div class="pt-5 list-group">
-        <!--
+        {% comment %} <!--
         <a href="#jobposting-cnodeveloperandroid-modal" data-bs-toggle="modal" data-bs-target="#jobposting-cnodeveloperandroid-modal" class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">CNO Developer (Android)</h5>
@@ -29,24 +28,24 @@ title: Careers
           <p class="mb-1">nullptr security is looking for a qualified Android developer with demonstrated CNO experience.</p>
           <small class="text-muted">TS/SCI+ | Junior - Senior | <span class="text-success">$180k - $300k+</span></small>
         </a>
-        -->
-        <a href="#jobposting-cnodeveloperwindows-modal" data-bs-toggle="modal" data-bs-target="#jobposting-cnodeveloperwindows-modal" class="list-group-item list-group-item-action flex-column align-items-start">
+        --> {% endcomment %}
+        {% comment %} <!-- <a href="#jobposting-cnodeveloperwindows-modal" data-bs-toggle="modal" data-bs-target="#jobposting-cnodeveloperwindows-modal" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
               <h5 class="mb-1">CNO Developer (Windows)</h5>
               <small>Chantilly, VA</small>
           </div>
           <p class="mb-1">nullptr security is looking for a qualified Windows CNO developer who is interested in VR/RE.</p>
           <small class="text-muted">TS/SCI+ | Junior - Senior | <span class="text-success">$180k - $300k+</span></small>
-        </a>
-        <a href="#jobposting-redteamoperator-modal" data-bs-toggle="modal" data-bs-target="#jobposting-redteamoperator-modal" class="list-group-item list-group-item-action flex-column align-items-start">
+        </a> --> {% endcomment %}
+        {% comment %} <!-- <a href="#jobposting-redteamoperator-modal" data-bs-toggle="modal" data-bs-target="#jobposting-redteamoperator-modal" class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Junior - Senior Red Team Operator</h5>
             <small>Washington, D.C.</small>
           </div>
           <p class="mb-1">nullptr security is looking for a qualified Red Team Operator.</p>
           <small class="text-muted">UNCLEARED | Junior - Senior | <span class="text-success">Competitive Pay</span></small>
-        </a>
-        <!--
+        </a> --> {% endcomment %}
+        {% comment %} <!--
         <a href="#jobposting-cnodeveloperlinux-modal" data-bs-toggle="modal" data-bs-target="#jobposting-cnodeveloperlinux-modal" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">CNO Developer (Linux)</h5>
@@ -63,12 +62,18 @@ title: Careers
           <p class="mb-1">nullptr security is looking for a malware analyst with prior software development and CNO experience.</p>
           <small class="text-muted">TS/SCI+ | Junior - Senior | <span class="text-success">$180k - $300k+</span></small>
         </a>
-        -->
+        --> {% endcomment %}
+        <a href="#jobposting-futureopenings-modal" data-bs-toggle="modal" data-bs-target="#jobposting-futureopenings-modal" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Future Openings</h5>
+          </div>
+          <p class="mb-1">nullptr security is always looking for the best talent. Don't see the perfect fit? Shoot us your resume for future opportunities.</p>
+        </a>
     </div>
 </main>
 
-<!-- CNO Developer (Android) -->
-<!--
+{% comment %} <!-- CNO Developer (Android) --> {% endcomment %}
+{% comment %} <!--
 <div class="modal fade text-dark" id="jobposting-cnodeveloperandroid-modal" tabindex="-1" role="dialog" aria-labelledby="jobposting-cnodeveloperandroid-title" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
@@ -112,11 +117,11 @@ title: Careers
       </div>
     </div>
 </div>
--->
-<!-- !CNO Developer (Android) -->
+--> {% endcomment %}
+{% comment %} <!-- !CNO Developer (Android) --> {% endcomment %}
 
-<!-- CNO Developer (Windows) -->
-<div class="modal fade text-dark" id="jobposting-cnodeveloperwindows-modal" tabindex="-1" role="dialog" aria-labelledby="jobposting-cnodeveloperwindows-title" aria-hidden="true">
+{% comment %} <!-- CNO Developer (Windows) --> {% endcomment %}
+{% comment %} <!-- <div class="modal fade text-dark" id="jobposting-cnodeveloperwindows-modal" tabindex="-1" role="dialog" aria-labelledby="jobposting-cnodeveloperwindows-title" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -159,11 +164,11 @@ title: Careers
         </div>
       </div>
     </div>
-</div>
-<!-- !CNO Developer (Windows) -->
+</div> --> {% endcomment %}
+{% comment %} <!-- !CNO Developer (Windows) --> {% endcomment %}
 
-<!-- CNO Developer (Linux) -->
-<!--
+{% comment %} <!-- CNO Developer (Linux) --> {% endcomment %}
+{% comment %} <!--
 <div class="modal fade text-dark" id="jobposting-cnodeveloperlinux-modal" tabindex="-1" role="dialog" aria-labelledby="jobposting-cnodeveloperlinux-title" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
@@ -208,11 +213,11 @@ title: Careers
       </div>
     </div>
 </div>
--->
-<!-- !CNO Developer (Linux) -->
+--> {% endcomment %}
+{% comment %} <!-- !CNO Developer (Linux) --> {% endcomment %}
 
-<!-- Malware Analyst -->
-<!-- <div class="modal fade text-dark" id="jobposting-malwareanalyst-modal" tabindex="-1" role="dialog" aria-labelledby="jobposting-malwareanalyst-title" aria-hidden="true">
+{% comment %} <!-- Malware Analyst --> {% endcomment %}
+{% comment %} <!-- <div class="modal fade text-dark" id="jobposting-malwareanalyst-modal" tabindex="-1" role="dialog" aria-labelledby="jobposting-malwareanalyst-title" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -250,11 +255,11 @@ title: Careers
       </div>
     </div>
   </div>
-</div> -->
-<!-- !Malware Analyst -->
+</div> --> {% endcomment %}
+{% comment %} <!-- !Malware Analyst --> {% endcomment %}
 
-<!-- Red Team Operator -->
-<div class="modal fade text-dark" id="jobposting-redteamoperator-modal" tabindex="-1" role="dialog" aria-labelledby="jobposting-redteamoperator-title" aria-hidden="true">
+{% comment %} <!-- Red Team Operator --> {% endcomment %}
+{% comment %} <!-- <div class="modal fade text-dark" id="jobposting-redteamoperator-modal" tabindex="-1" role="dialog" aria-labelledby="jobposting-redteamoperator-title" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -311,5 +316,28 @@ title: Careers
       </div>
     </div>
   </div>
+</div> --> {% endcomment %}
+{% comment %} <!-- !Red Team Operator --> {% endcomment %}
+
+{% comment %} <!-- Custom Job Modal --> {% endcomment %}
+<div class="modal fade text-dark" id="jobposting-futureopenings-modal" tabindex="-1" role="dialog" aria-labelledby="jobposting-futureopenings-title" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="jobposting-futureopenings-title">Future Openings</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p>Sometimes we don't have the perfect fit for the perfect candidate. We'd love to chat with you and see how your interest and skills align with our mission.</p>
+          <div class="mt-5">
+            <h5>Send us an email</h5>
+            <p>Click the link below or email us at <a href="mailto:careers@nullptrsec.io?subject=Future Openings">careers@nullptrsec.io</a> and send us your resume!</p>
+          </div>
+      </div>
+      <div class="modal-footer">
+          <a href="mailto:careers@nullptrsec.io?subject=Future Openings"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Apply</button></a>
+      </div>
+    </div>
+  </div>
 </div>
-<!-- !Red Team Operator -->
+{% comment %} <!-- !Cusotm Job Modal --> {% endcomment %}
